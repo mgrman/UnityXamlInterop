@@ -7,7 +7,6 @@ using System.Text;
 using System.IO;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Storage;
 
 #if ENABLE_WINMD_SUPPORT
 using Windows.UI.Xaml;
@@ -16,6 +15,7 @@ using Windows.Graphics.Display;
 using Windows.Foundation;
 using Windows.Storage.Streams;
 using Windows.Web;
+using Windows.Storage;
 
 #endif
 
@@ -104,6 +104,7 @@ public class XamlWebView : MonoBehaviour
 #endif
     }
 
+#if ENABLE_WINMD_SUPPORT
     private void WebView_NavigationFailed(object sender, WebViewNavigationFailedEventArgs e)
     {
         Debug.LogError($"{e.Uri} {e.WebErrorStatus}");
@@ -114,7 +115,6 @@ public class XamlWebView : MonoBehaviour
         Debug.LogError($"{e.Uri} {e.IsSuccess} {e.WebErrorStatus}");
     }
 
-#if ENABLE_WINMD_SUPPORT
     private class Resolver: IUriToStreamResolver
     {
         private string _html;
