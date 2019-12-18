@@ -6,7 +6,7 @@ using namespace ABI::Windows::UI::Xaml;
 using namespace ABI::Windows::UI::Xaml::Controls;
 using namespace Microsoft::WRL;
  
-extern "C" HRESULT GetPageContent(IInspectable* frame, IUIElement** pageContent)
+extern "C" HRESULT __stdcall GetPageContent(IInspectable* frame, IUIElement** pageContent)
 {
    *pageContent = nullptr;
  

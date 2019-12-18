@@ -345,9 +345,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1409050272}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23442dc9faf71bb4294b477b9b0d2465, type: 3}
+  m_Script: {fileID: 11500000, guid: e6860ba6def8184468cf76712d50a23a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _url: https://google.com
 --- !u!1 &1448453256
 GameObject:
   m_ObjectHideFlags: 0

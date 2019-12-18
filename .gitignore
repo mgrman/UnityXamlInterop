@@ -58,3 +58,8 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Rider
+.idea
+
+#Build folders
+/[Bb]uild-*/
