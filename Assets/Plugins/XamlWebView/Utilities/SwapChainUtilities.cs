@@ -4,6 +4,8 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using System.Runtime.InteropServices;
 
+namespace XamlWebView.Utilities
+{
 public static class SwapChainUtilities
 {
 #if ENABLE_IL2CPP
@@ -20,7 +22,6 @@ public static class SwapChainUtilities
         return pageContent as Windows.UI.Xaml.Controls.SwapChainPanel;
     }
 #else
-
     public static SwapChainPanel GetMainPanel()
     {
         if (Windows.UI.Xaml.Window.Current == null)
@@ -33,5 +34,6 @@ public static class SwapChainUtilities
     }
 
 #endif
+}
 }
 #endif
