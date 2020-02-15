@@ -28,7 +28,7 @@ namespace XamlWebView
             _webView = new WebView();
             _webView.NavigationCompleted += WebView_NavigationCompleted;
             _webView.NavigationFailed += WebView_NavigationFailed;
-            _webView.DefaultBackgroundColor = Windows.UI.Color.FromArgb(0, 0, 0, 0);
+            _webView.DefaultBackgroundColor = Windows.UI.Colors.Transparent;
 
             _panel.Children.Add(_webView);
 #endif
